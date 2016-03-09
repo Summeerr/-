@@ -7,6 +7,10 @@
 
 #import "MainViewController.h"
 
+#import "HXLeftViewController.h"
+#import "HXViewController.h"
+#import "HXRightViewController.h"
+
 #define hxwidth [UIScreen mainScreen].bounds.size.width
 #define hxheight [UIScreen mainScreen].bounds.size.height
 
@@ -22,130 +26,157 @@
 
 @implementation MainViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    //主视图
-    UIView *mainView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    mainView.backgroundColor = [UIColor redColor];
-    //mainView添加手势
-    UISwipeGestureRecognizer *swipGes = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipGes:)];
-    //右扫
-    swipGes.direction = UISwipeGestureRecognizerDirectionRight;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    //左扫
-    UISwipeGestureRecognizer *swipLeftGes = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipGes:)];
-    swipLeftGes.direction = UISwipeGestureRecognizerDirectionLeft;
-    
-    [mainView addGestureRecognizer:swipGes];
-    [mainView addGestureRecognizer:swipLeftGes];
-    
-    
-    
-    //左视图
-    UIView *leftView = [[UIView alloc]init];
-    leftView.frame = mainView.frame;
-    leftView.backgroundColor = [UIColor yellowColor];
-    
-    
-    //右视图
-    UIView *rightView = [[UIView alloc]init];
-    rightView.frame = mainView.frame;
-    rightView.backgroundColor = [UIColor blueColor];
-    
-    
-    [self.view addSubview:rightView];//蓝色
-    [self.view addSubview:leftView];//黄色
-    [self.view addSubview:mainView];//红色
-    
-    
-    self.leftView = leftView;
-    self.rightView = rightView;
-    self.mainView = mainView;
-    
-    self.leftView.hidden = YES;
-    self.rightView.hidden = YES;
+    //设置内容的view
+    [self setUpAllView];
     
 }
 
+
+-(void)setUpAllView
+{
+    //中间视图
+    self.middleViewController.view.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    UIView *mainView = self.middleViewController.view;
+    mainView.backgroundColor = [UIColor redColor];
+    
+    //mainView添加手势
+    UISwipeGestureRecognizer *swipGesR = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipGes:)];
+    //右扫
+    swipGesR.direction = UISwipeGestureRecognizerDirectionRight;
+    //左扫
+    UISwipeGestureRecognizer *swipGesL = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipGes:)];
+    swipGesL.direction = UISwipeGestureRecognizerDirectionLeft;
+
+    
+    [mainView addGestureRecognizer:swipGesR];
+    [mainView addGestureRecognizer:swipGesL];
+    self.mainView = mainView;
+    
+
+    
+        if (self.leftViewController&&!self.rightViewController) {//如果是左视图控制器
+  
+            //左视图
+            self.leftView = self.leftViewController.view;
+            self.leftView.frame = mainView.frame;
+            self.leftView.backgroundColor = [UIColor yellowColor];
+            [self.view addSubview:self.leftView];
+            [self.view addSubview:self.mainView];
+
+            
+            
+        }else if (self.rightViewController&&!self.leftViewController){//如果是右视图
+            
+            //右视图
+            self.rightView = self.rightViewController.view;
+            self.rightView.frame = self.mainView.frame;
+            self.rightView.backgroundColor = [UIColor blueColor];
+            [self.view addSubview:self.rightView];
+            [self.view addSubview:self.mainView];
+            
+        }
+    else if(self.leftViewController && self.rightViewController)
+    {
+        //左视图
+        self.leftView = self.leftViewController.view;
+        self.leftView.frame = mainView.frame;
+        //右视图
+        self.rightView = self.rightViewController.view;
+        self.rightView.frame = mainView.frame;
+        
+        [self.view addSubview:self.rightView];
+        [self.view addSubview:self.leftView];
+        [self.view addSubview:self.mainView];
+        
+    }
+    
+}
 
 //轻扫手势
 -(void)swipGes:(UISwipeGestureRecognizer *)swipGes
 {
     
     BOOL isRight = swipGes.direction == UISwipeGestureRecognizerDirectionRight;
-    BOOL isLeft = swipGes.direction == UISwipeGestureRecognizerDirectionLeft;
-    if (isRight) {
-        //改变mainViewde尺寸及位置
+//    BOOL isLeft = swipGes.direction == UISwipeGestureRecognizerDirectionLeft;
+   
+    if (self.leftViewController && !self.rightViewController) {
         
-        //当mainView视图x点，显示黄视图
-        if (self.mainView.frame.origin.x>=0) {
-            
-            //主视图右移
+        if (isRight) {
             [UIView animateWithDuration:0.2 animations:^{
-                
-                
-                self.leftView.hidden = !(self.rightView.hidden = isRight);
                 self.mainView.frame = CGRectMake(300, 100, hxwidth-300, hxheight-200);
-                
             }];
-            
-        }
-        else//小于0
+        }else
         {
-            //主视图右移
             [UIView animateWithDuration:0.2 animations:^{
-                
-                
-                self.leftView.hidden = !(self.rightView.hidden = !isRight);
-                self.mainView.frame = self.view.frame;
-                
-            }completion:^(BOOL finished) {
-                self.leftView.hidden = self.rightView.hidden = YES;
+                self.mainView.frame = self.view.bounds;
             }];
         }
-        
-    }else if(isLeft)
+    
+    }
+    else if(self.rightViewController && !self.leftViewController)
     {
-        //改变mainView的尺寸和位置
-        //当mainView视图x点，显示黄视图
-        if (self.mainView.frame.origin.x>0) {//大于0
-            
-            //主视图右移
+        if (isRight) {
             [UIView animateWithDuration:0.2 animations:^{
-                
-                self.rightView.hidden = (self.leftView.hidden = !isLeft);
-                self.mainView.frame = self.view.frame;
-            }completion:^(BOOL finished) {
-                self.leftView.hidden = self.rightView.hidden = YES;
+                self.mainView.frame = self.view.bounds;
             }];
-            
-            
-        }
-        else//小于等于0
+        }else
         {
-            //主视图右移
             [UIView animateWithDuration:0.2 animations:^{
-                
-                //                self.mainView.transform = CGAffineTransformTranslate(self.mainView.transform, -hxwidth+100, 0);
-                
-                self.leftView.hidden = !(self.rightView.hidden = !isLeft);
-                self.mainView.frame = CGRectMake(-300, 100, hxwidth, hxheight-200);
+                self.mainView.frame = CGRectMake(0, 100, hxwidth-300, hxheight-200);
             }];
         }
-        
-        
+    }
+    else if (self.rightViewController && self.leftViewController)
+    {
+        if (isRight) {
+            if (self.mainView.frame.origin.x >= 0) {
+                [UIView animateWithDuration:0.2 animations:^{
+                    self.mainView.frame = CGRectMake(300, 100, hxwidth-300, hxheight-200);
+                    self.rightView.hidden = YES;
+                    self.leftView.hidden = NO;
+                }];
+            }else
+            {
+                [UIView animateWithDuration:0.2 animations:^{
+                    self.mainView.frame = self.view.bounds;
+                }completion:^(BOOL finished) {
+                    self.leftView.hidden = YES;
+                    self.rightView.hidden = YES;
+                }];
+            }
+            
+        }else
+        {
+            if (self.mainView.frame.origin.x>0) {
+                [UIView animateWithDuration:0.2 animations:^{
+
+                    self.mainView.frame = self.view.bounds;
+                }completion:^(BOOL finished) {
+                    self.leftView.hidden = YES;
+                    self.rightView.hidden = YES;
+                }];
+            }else
+            {
+                [UIView animateWithDuration:0.2 animations:^{
+                    self.mainView.frame = CGRectMake(-1, 100, hxwidth-300, hxheight-200);
+                    self.rightView.hidden = NO;
+                    self.leftView.hidden = YES;
+                }];
+            }
+        }
         
     }
-    
-    
-    
 }
-
-
-
 
 
 @end

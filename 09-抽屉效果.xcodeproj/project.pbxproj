@@ -13,6 +13,10 @@
 		4604D1F21C15D2C700E66FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4604D1F11C15D2C700E66FB5 /* Assets.xcassets */; };
 		4604D1F51C15D2C700E66FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604D1F31C15D2C700E66FB5 /* LaunchScreen.storyboard */; };
 		4651542E1C8D985B00196EDE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4651542D1C8D985B00196EDE /* MainViewController.m */; };
+		46F43D621C8E848300B41687 /* HXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F43D611C8E848300B41687 /* HXViewController.m */; };
+		46F43D651C8E848D00B41687 /* HXLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F43D641C8E848D00B41687 /* HXLeftViewController.m */; };
+		46F43D681C8E849600B41687 /* HXRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F43D671C8E849600B41687 /* HXRightViewController.m */; };
+		46FF2D611C8FD3900057CF92 /* HXMiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF2D601C8FD3900057CF92 /* HXMiddleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		4604D1F61C15D2C700E66FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4651542C1C8D985B00196EDE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4651542D1C8D985B00196EDE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		46F43D601C8E848300B41687 /* HXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXViewController.h; sourceTree = "<group>"; };
+		46F43D611C8E848300B41687 /* HXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXViewController.m; sourceTree = "<group>"; };
+		46F43D631C8E848D00B41687 /* HXLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXLeftViewController.h; sourceTree = "<group>"; };
+		46F43D641C8E848D00B41687 /* HXLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXLeftViewController.m; sourceTree = "<group>"; };
+		46F43D661C8E849600B41687 /* HXRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXRightViewController.h; sourceTree = "<group>"; };
+		46F43D671C8E849600B41687 /* HXRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXRightViewController.m; sourceTree = "<group>"; };
+		46FF2D5F1C8FD3900057CF92 /* HXMiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMiddleViewController.h; sourceTree = "<group>"; };
+		46FF2D601C8FD3900057CF92 /* HXMiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMiddleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 			children = (
 				4604D1E81C15D2C700E66FB5 /* AppDelegate.h */,
 				4604D1E91C15D2C700E66FB5 /* AppDelegate.m */,
+				46F43D601C8E848300B41687 /* HXViewController.h */,
+				46F43D611C8E848300B41687 /* HXViewController.m */,
 				4604D1EE1C15D2C700E66FB5 /* Main.storyboard */,
 				4604D1F11C15D2C700E66FB5 /* Assets.xcassets */,
 				4604D1F31C15D2C700E66FB5 /* LaunchScreen.storyboard */,
@@ -67,6 +81,12 @@
 				4604D1E51C15D2C700E66FB5 /* Supporting Files */,
 				4651542C1C8D985B00196EDE /* MainViewController.h */,
 				4651542D1C8D985B00196EDE /* MainViewController.m */,
+				46FF2D5F1C8FD3900057CF92 /* HXMiddleViewController.h */,
+				46FF2D601C8FD3900057CF92 /* HXMiddleViewController.m */,
+				46F43D631C8E848D00B41687 /* HXLeftViewController.h */,
+				46F43D641C8E848D00B41687 /* HXLeftViewController.m */,
+				46F43D661C8E849600B41687 /* HXRightViewController.h */,
+				46F43D671C8E849600B41687 /* HXRightViewController.m */,
 			);
 			path = "09-抽屉效果";
 			sourceTree = "<group>";
@@ -150,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F43D621C8E848300B41687 /* HXViewController.m in Sources */,
+				46FF2D611C8FD3900057CF92 /* HXMiddleViewController.m in Sources */,
 				4604D1EA1C15D2C700E66FB5 /* AppDelegate.m in Sources */,
 				4604D1E71C15D2C700E66FB5 /* main.m in Sources */,
+				46F43D681C8E849600B41687 /* HXRightViewController.m in Sources */,
 				4651542E1C8D985B00196EDE /* MainViewController.m in Sources */,
+				46F43D651C8E848D00B41687 /* HXLeftViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
