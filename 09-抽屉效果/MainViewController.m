@@ -28,8 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -61,8 +59,6 @@
     [mainView addGestureRecognizer:swipGesR];
     [mainView addGestureRecognizer:swipGesL];
     self.mainView = mainView;
-    
-
     
         if (self.leftViewController&&!self.rightViewController) {//如果是左视图控制器
   
