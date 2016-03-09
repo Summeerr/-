@@ -72,7 +72,7 @@
             self.leftView.backgroundColor = [UIColor yellowColor];
             [self.view addSubview:self.leftView];
             [self.view addSubview:self.mainView];
-
+            self.leftView.hidden = YES;
             
             
         }else if (self.rightViewController&&!self.leftViewController){//如果是右视图
@@ -83,6 +83,7 @@
             self.rightView.backgroundColor = [UIColor blueColor];
             [self.view addSubview:self.rightView];
             [self.view addSubview:self.mainView];
+            self.rightView.hidden = YES;
             
         }
     else if(self.leftViewController && self.rightViewController)
@@ -97,6 +98,8 @@
         [self.view addSubview:self.rightView];
         [self.view addSubview:self.leftView];
         [self.view addSubview:self.mainView];
+        self.leftView.hidden = YES;
+        self.rightView.hidden = YES;
         
     }
     
@@ -112,6 +115,7 @@
     if (self.leftViewController && !self.rightViewController) {
         
         if (isRight) {
+            self.leftView.hidden = NO;
             [UIView animateWithDuration:0.2 animations:^{
                 self.mainView.frame = CGRectMake(300, 100, hxwidth-300, hxheight-200);
             }];
@@ -119,6 +123,8 @@
         {
             [UIView animateWithDuration:0.2 animations:^{
                 self.mainView.frame = self.view.bounds;
+            }completion:^(BOOL finished) {
+                self.leftView.hidden = YES;
             }];
         }
     
@@ -128,9 +134,12 @@
         if (isRight) {
             [UIView animateWithDuration:0.2 animations:^{
                 self.mainView.frame = self.view.bounds;
+            }completion:^(BOOL finished) {
+                self.rightView.hidden = YES;
             }];
         }else
         {
+            self.rightView.hidden = NO;
             [UIView animateWithDuration:0.2 animations:^{
                 self.mainView.frame = CGRectMake(0, 100, hxwidth-300, hxheight-200);
             }];

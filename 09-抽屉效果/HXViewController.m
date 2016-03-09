@@ -21,7 +21,7 @@
     //中间视图控制器
     self.middleViewController = [[HXMiddleViewController alloc]init];
     //右视图控制器
-    self.rightViewController = [[HXRightViewController alloc]init];
+//    self.rightViewController = [[HXRightViewController alloc]init];
     [super viewDidLoad];
   //左视图控制器
     self.leftViewController = [[HXLeftViewController alloc]init];
