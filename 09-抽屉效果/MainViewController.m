@@ -5,11 +5,11 @@
 //  Copyright © 2015年 胡祥. All rights reserved.
 //
 
+
+
+
 #import "MainViewController.h"
 
-#import "HXLeftViewController.h"
-#import "HXViewController.h"
-#import "HXRightViewController.h"
 
 #define hxwidth [UIScreen mainScreen].bounds.size.width
 #define hxheight [UIScreen mainScreen].bounds.size.height
