@@ -12,6 +12,21 @@
 		4604D1F01C15D2C700E66FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604D1EE1C15D2C700E66FB5 /* Main.storyboard */; };
 		4604D1F21C15D2C700E66FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4604D1F11C15D2C700E66FB5 /* Assets.xcassets */; };
 		4604D1F51C15D2C700E66FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604D1F31C15D2C700E66FB5 /* LaunchScreen.storyboard */; };
+		4624B6D41CB9F2E8007525B9 /* LMYBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B69F1CB9F2E8007525B9 /* LMYBrandViewController.m */; };
+		4624B6D51CB9F2E8007525B9 /* LMYClassificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6A51CB9F2E8007525B9 /* LMYClassificationViewController.m */; };
+		4624B6D61CB9F2E8007525B9 /* LMYFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6AB1CB9F2E8007525B9 /* LMYFindViewController.m */; };
+		4624B6D71CB9F2E8007525B9 /* LMYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6B11CB9F2E8007525B9 /* LMYNavigationController.m */; };
+		4624B6D81CB9F2E8007525B9 /* LMYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6B31CB9F2E8007525B9 /* LMYTabBarController.m */; };
+		4624B6D91CB9F2E8007525B9 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6B91CB9F2E8007525B9 /* UIBarButtonItem+Item.m */; };
+		4624B6DA1CB9F2E8007525B9 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6BB1CB9F2E8007525B9 /* UIColor+Hex.m */; };
+		4624B6DB1CB9F2E8007525B9 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6BD1CB9F2E8007525B9 /* UIImage+Render.m */; };
+		4624B6DC1CB9F2E8007525B9 /* LMYLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6C51CB9F2E8007525B9 /* LMYLeftViewController.m */; };
+		4624B6DD1CB9F2E8007525B9 /* LMYToadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6C71CB9F2E8007525B9 /* LMYToadyViewController.m */; };
+		4624B6DE1CB9F2E8007525B9 /* LMYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6C91CB9F2E8007525B9 /* LMYViewController.m */; };
+		4624B6DF1CB9F2E8007525B9 /* HXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6CB1CB9F2E8007525B9 /* HXMainViewController.m */; };
+		4624B6E01CB9F2E8007525B9 /* LMYTomorrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6D11CB9F2E8007525B9 /* LMYTomorrowViewController.m */; };
+		4624B6E11CB9F31A007525B9 /* UIColor+Hex.h in Sources */ = {isa = PBXBuildFile; fileRef = 4624B6BA1CB9F2E8007525B9 /* UIColor+Hex.h */; };
+		463D37271CB9F62000B5D15C /* hxMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D37261CB9F62000B5D15C /* hxMainViewController.m */; };
 		4651542E1C8D985B00196EDE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4651542D1C8D985B00196EDE /* MainViewController.m */; };
 		46F43D621C8E848300B41687 /* HXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F43D611C8E848300B41687 /* HXViewController.m */; };
 		46F43D651C8E848D00B41687 /* HXLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F43D641C8E848D00B41687 /* HXLeftViewController.m */; };
@@ -28,6 +43,34 @@
 		4604D1F11C15D2C700E66FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4604D1F41C15D2C700E66FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4604D1F61C15D2C700E66FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4624B69E1CB9F2E8007525B9 /* LMYBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYBrandViewController.h; sourceTree = "<group>"; };
+		4624B69F1CB9F2E8007525B9 /* LMYBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYBrandViewController.m; sourceTree = "<group>"; };
+		4624B6A41CB9F2E8007525B9 /* LMYClassificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYClassificationViewController.h; sourceTree = "<group>"; };
+		4624B6A51CB9F2E8007525B9 /* LMYClassificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYClassificationViewController.m; sourceTree = "<group>"; };
+		4624B6AA1CB9F2E8007525B9 /* LMYFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYFindViewController.h; sourceTree = "<group>"; };
+		4624B6AB1CB9F2E8007525B9 /* LMYFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYFindViewController.m; sourceTree = "<group>"; };
+		4624B6B01CB9F2E8007525B9 /* LMYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYNavigationController.h; sourceTree = "<group>"; };
+		4624B6B11CB9F2E8007525B9 /* LMYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYNavigationController.m; sourceTree = "<group>"; };
+		4624B6B21CB9F2E8007525B9 /* LMYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYTabBarController.h; sourceTree = "<group>"; };
+		4624B6B31CB9F2E8007525B9 /* LMYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYTabBarController.m; sourceTree = "<group>"; };
+		4624B6B81CB9F2E8007525B9 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		4624B6B91CB9F2E8007525B9 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		4624B6BA1CB9F2E8007525B9 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		4624B6BB1CB9F2E8007525B9 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		4624B6BC1CB9F2E8007525B9 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
+		4624B6BD1CB9F2E8007525B9 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
+		4624B6C41CB9F2E8007525B9 /* LMYLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYLeftViewController.h; sourceTree = "<group>"; };
+		4624B6C51CB9F2E8007525B9 /* LMYLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYLeftViewController.m; sourceTree = "<group>"; };
+		4624B6C61CB9F2E8007525B9 /* LMYToadyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYToadyViewController.h; sourceTree = "<group>"; };
+		4624B6C71CB9F2E8007525B9 /* LMYToadyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYToadyViewController.m; sourceTree = "<group>"; };
+		4624B6C81CB9F2E8007525B9 /* LMYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYViewController.h; sourceTree = "<group>"; };
+		4624B6C91CB9F2E8007525B9 /* LMYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYViewController.m; sourceTree = "<group>"; };
+		4624B6CA1CB9F2E8007525B9 /* HXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMainViewController.h; sourceTree = "<group>"; };
+		4624B6CB1CB9F2E8007525B9 /* HXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMainViewController.m; sourceTree = "<group>"; };
+		4624B6D01CB9F2E8007525B9 /* LMYTomorrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMYTomorrowViewController.h; sourceTree = "<group>"; };
+		4624B6D11CB9F2E8007525B9 /* LMYTomorrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMYTomorrowViewController.m; sourceTree = "<group>"; };
+		463D37251CB9F62000B5D15C /* hxMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hxMainViewController.h; sourceTree = "<group>"; };
+		463D37261CB9F62000B5D15C /* hxMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hxMainViewController.m; sourceTree = "<group>"; };
 		4651542C1C8D985B00196EDE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4651542D1C8D985B00196EDE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		46F43D601C8E848300B41687 /* HXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXViewController.h; sourceTree = "<group>"; };
@@ -70,6 +113,9 @@
 		4604D1E41C15D2C700E66FB5 /* 09-抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				463D37231CB9F52A00B5D15C /* TabOneClick(只有一个点击) */,
+				4624B6461CB9ED9D007525B9 /* TabAllClick(tabbar控制器实现滑动) */,
+				4624B5F11CB9E9D3007525B9 /* LRDrawView(左右视图) */,
 				4604D1E81C15D2C700E66FB5 /* AppDelegate.h */,
 				4604D1E91C15D2C700E66FB5 /* AppDelegate.m */,
 				46F43D601C8E848300B41687 /* HXViewController.h */,
@@ -79,14 +125,6 @@
 				4604D1F31C15D2C700E66FB5 /* LaunchScreen.storyboard */,
 				4604D1F61C15D2C700E66FB5 /* Info.plist */,
 				4604D1E51C15D2C700E66FB5 /* Supporting Files */,
-				4651542C1C8D985B00196EDE /* MainViewController.h */,
-				4651542D1C8D985B00196EDE /* MainViewController.m */,
-				46FF2D5F1C8FD3900057CF92 /* HXMiddleViewController.h */,
-				46FF2D601C8FD3900057CF92 /* HXMiddleViewController.m */,
-				46F43D631C8E848D00B41687 /* HXLeftViewController.h */,
-				46F43D641C8E848D00B41687 /* HXLeftViewController.m */,
-				46F43D661C8E849600B41687 /* HXRightViewController.h */,
-				46F43D671C8E849600B41687 /* HXRightViewController.m */,
 			);
 			path = "09-抽屉效果";
 			sourceTree = "<group>";
@@ -97,6 +135,319 @@
 				4604D1E61C15D2C700E66FB5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4624B5F11CB9E9D3007525B9 /* LRDrawView(左右视图) */ = {
+			isa = PBXGroup;
+			children = (
+				4651542C1C8D985B00196EDE /* MainViewController.h */,
+				4651542D1C8D985B00196EDE /* MainViewController.m */,
+				46FF2D5F1C8FD3900057CF92 /* HXMiddleViewController.h */,
+				46FF2D601C8FD3900057CF92 /* HXMiddleViewController.m */,
+				46F43D631C8E848D00B41687 /* HXLeftViewController.h */,
+				46F43D641C8E848D00B41687 /* HXLeftViewController.m */,
+				46F43D661C8E849600B41687 /* HXRightViewController.h */,
+				46F43D671C8E849600B41687 /* HXRightViewController.m */,
+			);
+			name = "LRDrawView(左右视图)";
+			sourceTree = "<group>";
+		};
+		4624B6461CB9ED9D007525B9 /* TabAllClick(tabbar控制器实现滑动) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B69B1CB9F2E8007525B9 /* Classes */,
+			);
+			name = "TabAllClick(tabbar控制器实现滑动)";
+			sourceTree = "<group>";
+		};
+		4624B69B1CB9F2E8007525B9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4624B69C1CB9F2E8007525B9 /* Brand(品牌团购) */,
+				4624B6A21CB9F2E8007525B9 /* Classification(分类搜索) */,
+				4624B6A81CB9F2E8007525B9 /* Find(发现) */,
+				4624B6AE1CB9F2E8007525B9 /* Main */,
+				4624B6B61CB9F2E8007525B9 /* Other(其他) */,
+				4624B6BE1CB9F2E8007525B9 /* Setting(设置) */,
+				4624B6C21CB9F2E8007525B9 /* Today(今日惠品) */,
+				4624B6CE1CB9F2E8007525B9 /* Tomorrow(明日预告) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4624B69C1CB9F2E8007525B9 /* Brand(品牌团购) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B69D1CB9F2E8007525B9 /* Controller */,
+				4624B6A01CB9F2E8007525B9 /* Model */,
+				4624B6A11CB9F2E8007525B9 /* View */,
+			);
+			path = "Brand(品牌团购)";
+			sourceTree = "<group>";
+		};
+		4624B69D1CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4624B69E1CB9F2E8007525B9 /* LMYBrandViewController.h */,
+				4624B69F1CB9F2E8007525B9 /* LMYBrandViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6A01CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6A11CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6A21CB9F2E8007525B9 /* Classification(分类搜索) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6A31CB9F2E8007525B9 /* Controller */,
+				4624B6A61CB9F2E8007525B9 /* Model */,
+				4624B6A71CB9F2E8007525B9 /* View */,
+			);
+			path = "Classification(分类搜索)";
+			sourceTree = "<group>";
+		};
+		4624B6A31CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6A41CB9F2E8007525B9 /* LMYClassificationViewController.h */,
+				4624B6A51CB9F2E8007525B9 /* LMYClassificationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6A61CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6A71CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6A81CB9F2E8007525B9 /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6A91CB9F2E8007525B9 /* Controller */,
+				4624B6AC1CB9F2E8007525B9 /* Model */,
+				4624B6AD1CB9F2E8007525B9 /* View */,
+			);
+			path = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		4624B6A91CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6AA1CB9F2E8007525B9 /* LMYFindViewController.h */,
+				4624B6AB1CB9F2E8007525B9 /* LMYFindViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6AC1CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6AD1CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6AE1CB9F2E8007525B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6AF1CB9F2E8007525B9 /* Controller */,
+				4624B6B41CB9F2E8007525B9 /* Model */,
+				4624B6B51CB9F2E8007525B9 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4624B6AF1CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6B01CB9F2E8007525B9 /* LMYNavigationController.h */,
+				4624B6B11CB9F2E8007525B9 /* LMYNavigationController.m */,
+				4624B6B21CB9F2E8007525B9 /* LMYTabBarController.h */,
+				4624B6B31CB9F2E8007525B9 /* LMYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6B41CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6B51CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6B61CB9F2E8007525B9 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6B71CB9F2E8007525B9 /* Category */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		4624B6B71CB9F2E8007525B9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6B81CB9F2E8007525B9 /* UIBarButtonItem+Item.h */,
+				4624B6B91CB9F2E8007525B9 /* UIBarButtonItem+Item.m */,
+				4624B6BA1CB9F2E8007525B9 /* UIColor+Hex.h */,
+				4624B6BB1CB9F2E8007525B9 /* UIColor+Hex.m */,
+				4624B6BC1CB9F2E8007525B9 /* UIImage+Render.h */,
+				4624B6BD1CB9F2E8007525B9 /* UIImage+Render.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4624B6BE1CB9F2E8007525B9 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6BF1CB9F2E8007525B9 /* Controller */,
+				4624B6C01CB9F2E8007525B9 /* Model */,
+				4624B6C11CB9F2E8007525B9 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		4624B6BF1CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6C01CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6C11CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6C21CB9F2E8007525B9 /* Today(今日惠品) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6C31CB9F2E8007525B9 /* Controllers */,
+				4624B6CC1CB9F2E8007525B9 /* Model */,
+				4624B6CD1CB9F2E8007525B9 /* View */,
+			);
+			path = "Today(今日惠品)";
+			sourceTree = "<group>";
+		};
+		4624B6C31CB9F2E8007525B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6C41CB9F2E8007525B9 /* LMYLeftViewController.h */,
+				4624B6C51CB9F2E8007525B9 /* LMYLeftViewController.m */,
+				4624B6C61CB9F2E8007525B9 /* LMYToadyViewController.h */,
+				4624B6C71CB9F2E8007525B9 /* LMYToadyViewController.m */,
+				4624B6C81CB9F2E8007525B9 /* LMYViewController.h */,
+				4624B6C91CB9F2E8007525B9 /* LMYViewController.m */,
+				4624B6CA1CB9F2E8007525B9 /* HXMainViewController.h */,
+				4624B6CB1CB9F2E8007525B9 /* HXMainViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4624B6CC1CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6CD1CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4624B6CE1CB9F2E8007525B9 /* Tomorrow(明日预告) */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6CF1CB9F2E8007525B9 /* Controller */,
+				4624B6D21CB9F2E8007525B9 /* Model */,
+				4624B6D31CB9F2E8007525B9 /* View */,
+			);
+			path = "Tomorrow(明日预告)";
+			sourceTree = "<group>";
+		};
+		4624B6CF1CB9F2E8007525B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4624B6D01CB9F2E8007525B9 /* LMYTomorrowViewController.h */,
+				4624B6D11CB9F2E8007525B9 /* LMYTomorrowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4624B6D21CB9F2E8007525B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4624B6D31CB9F2E8007525B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		463D37231CB9F52A00B5D15C /* TabOneClick(只有一个点击) */ = {
+			isa = PBXGroup;
+			children = (
+				463D37241CB9F62000B5D15C /* Class */,
+			);
+			name = "TabOneClick(只有一个点击)";
+			sourceTree = "<group>";
+		};
+		463D37241CB9F62000B5D15C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				463D37251CB9F62000B5D15C /* hxMainViewController.h */,
+				463D37261CB9F62000B5D15C /* hxMainViewController.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,13 +521,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4624B6E11CB9F31A007525B9 /* UIColor+Hex.h in Sources */,
 				46F43D621C8E848300B41687 /* HXViewController.m in Sources */,
+				4624B6DE1CB9F2E8007525B9 /* LMYViewController.m in Sources */,
 				46FF2D611C8FD3900057CF92 /* HXMiddleViewController.m in Sources */,
+				4624B6D81CB9F2E8007525B9 /* LMYTabBarController.m in Sources */,
+				463D37271CB9F62000B5D15C /* hxMainViewController.m in Sources */,
+				4624B6E01CB9F2E8007525B9 /* LMYTomorrowViewController.m in Sources */,
 				4604D1EA1C15D2C700E66FB5 /* AppDelegate.m in Sources */,
+				4624B6D51CB9F2E8007525B9 /* LMYClassificationViewController.m in Sources */,
+				4624B6DF1CB9F2E8007525B9 /* HXMainViewController.m in Sources */,
+				4624B6D41CB9F2E8007525B9 /* LMYBrandViewController.m in Sources */,
 				4604D1E71C15D2C700E66FB5 /* main.m in Sources */,
+				4624B6DB1CB9F2E8007525B9 /* UIImage+Render.m in Sources */,
+				4624B6DD1CB9F2E8007525B9 /* LMYToadyViewController.m in Sources */,
+				4624B6D91CB9F2E8007525B9 /* UIBarButtonItem+Item.m in Sources */,
+				4624B6D61CB9F2E8007525B9 /* LMYFindViewController.m in Sources */,
 				46F43D681C8E849600B41687 /* HXRightViewController.m in Sources */,
 				4651542E1C8D985B00196EDE /* MainViewController.m in Sources */,
+				4624B6DA1CB9F2E8007525B9 /* UIColor+Hex.m in Sources */,
 				46F43D651C8E848D00B41687 /* HXLeftViewController.m in Sources */,
+				4624B6DC1CB9F2E8007525B9 /* LMYLeftViewController.m in Sources */,
+				4624B6D71CB9F2E8007525B9 /* LMYNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
